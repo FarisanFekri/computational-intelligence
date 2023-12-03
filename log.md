@@ -52,3 +52,7 @@ Personal repository for computational intelligence 2023-2024
 --
 - Committing lab 2 to the github repository
 - Updating the log
+
+**11/22/2023**
+-- 
+- Studying theory necessities for Lab 9 with some collegues 
