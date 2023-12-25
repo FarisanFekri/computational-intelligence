@@ -120,8 +120,25 @@ The goal is to evolve a genotype (set of neural network weights) that produces a
 **12/18/2023**
 --
 - Meeting online with the usual collegues to study the slides if Reinforcement Learning and finishing it
-- Discussing a little more about the lab 10 and deciding on how to expand it
+- Discussing a little more about the Lab 10 and deciding on how to expand it
 The ideas for now are: 
 1) adding action-value function
 2) adding Hybdrid Montecarlo simulation with full game simulation
+
+**12/20/2023**
+--
+- Implementing the discussed ideas previously with collegues on an online meeting call for Lab 10 and acheiving good results on the same day
+
+**12/22/2023**
+-- 
+- Continuing with the Theory, closing the Knowledge-based agent alongside with Multi-agent systems and Swarm Intelligence with the contribution of my collegues on an online call, discussing the matters accordingly together while reviewing the subjects
+
+**12/24/2023**
+--
+- Adding the results of the tests running and some comments for Lab 10 as the finishing touches
+
+**12/25/2023**
+--
+- Lab 10 Commit
+- Updating the log 
 
