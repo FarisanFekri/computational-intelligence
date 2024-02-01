@@ -140,5 +140,103 @@ The ideas for now are:
 **12/25/2023**
 --
 - Lab 10 Commit
-- Updating the log 
+- Updating the log
 
+**12/27/2023**
+-- 
+- Me and my teammates organized a meeting to start the Quixo project.
+- We talked about a way to add another player by extending it in the main
+- We decided to go further with the MixMax strategy.
+- Self.minmax returns the player and the best move for the player and in the end we want to return none because no one is playing.
+- Random player's move is never invalid even though if it is random there's always a check (so we should print for each valid move where the player can do the move not that the fact for some reason (like the position is occupied) it can't do the move)
+- Since minmax is deterministic, it can't change it's function so it's forever going to do the invalid move.
+- the first player is minmax and the second player is random.
+- We have to set a limit because the game is too long and the random player is stupidly winning. 
+- We can think about Alpha-Beta pruning.
+- An idea: in the non-terminal state if there are many 0, we are winning and if there are many 1 we are losing. You kinda push the play to pick any cube with an empty cell rather than a taken one because if you take the ones with symbols you have to change it to yours. It would be an even distribution if we try this method (choosing empty slots).
+
+**12/28/2023**
+--
+- Me and my teammates set up another meeting to think of doing other strategies - Same MinMax as before but with Alpha-Beta pruning 
+- alpha is the last value we take for the max player and beta is the last value we take for the min player.
+- The second player still plays random
+- Idea: when you reach a limit of subtree, instead of stopping, if the subtree is intersting, continue the exploring instead of stopping. The computational would for sure is higher but it would acheive good results. e.g. if there are 4 that are really close, continue more.
+- Our MinMax approach with Alpha-Beta pruning apruning works perfectly with 96% chance of winning in 100 games
+- Next working algorithm: Reinforcement Learining.
+- We train action value function 
+- We need to increase the reward in every zero the we find.
+- Epsilon is the weight of the change, if there's too much winning or losing you don't want to go back and forth but you just want to change it a bit.
+- We have a value 0 which is losing and 1 which is win, we will count the difference which is 1 so we will change to 0.01 and 1 and then do it again in the next iteration
+- There are states we need in a certain situation that we won and the action in that situation.
+- Each time we calculate the reward for a certain action, if it is better than the previous reward, we replace the reward until we find the max reward for an action
+- We want to see what number of iteration is the best, for now we will need a lot. The problem here is the opponent but that fact that we are not exploring.
+
+
+**01/05/2024**
+--
+- Writing some peer reviews of Lab 10 for three of my collegues.
+- Asking some of my collegues to write a peer review of Lab 10 for me if they have the time.
+
+**01/06/2024**
+--
+- Me and my teammates set the third meeting to continue with the Quixo Project. 
+- We increased the learning rate, we will have to keep training with different number of iterations to see what would be it more optimized.
+- We each tried with different numbers of epsilon to see whether we can reach better numbers of winning or not but the results are really low (maximum winning was 20%)
+- Idea: Maybe moving from monte carlo to a more in depth analysis. Other than that, I think that we could also think about a way to improve the RL agent.
+- One of my teammtes proposed EA as the alternative to RL. He also said that he will discuss the problem with a friend of his that is doing the project until further update for doing the rest of the project.
+
+
+**01/07/2024**
+--
+- We discussed our problem with some collgegue about the MonteCarlo problem we have for thw Quixo project. She got 80% winnings against the random player. She also made an action value function, similar to us so we just have to see if we can improve our action value function.
+
+**01/09/2024**
+--
+- Me and my teammates met before the class for the Quixo project to discuss a way of updating our reinforcement algorithm for the Quixo project.
+- We decided to go on with Reinforcement Learning with Monte-Carlo and parallelization.
+
+**01/10/2024**
+--
+- For MinMax solution of the Quixo project the game 50 out of 50 times
+The problem is that with the new check_winner now is very slow and with the depth = 3 (no alpha beta) it took 107 minutes for 50 games but we I kinda found a solution with depth equal to 2 it takes way less time (5 min for 100 games) and we are still winning a lot (100 out of 100 times)
+
+**01/20/2024**
+-- 
+- Restarting with the Theory with some of my collegues (Now we are going back to the beginning if the course and doing the earlier topics regarding Evolutionary Strategies (ES) and Evolutionary Programming (EP))
+- By the request of my teammates, it was decided that I should train our agent for many iterations as possible and reload the dictionary later to update it by retraining and in the end, use the same file to test the agent against the random.
+
+**01/21/2024**
+-- 
+- Continuing with the theory with some of my collegues (Regarding Evolutionary Programming (EP) and Classical EP)
+
+**01/22/2024**
+-- 
+- After running some tests with my computer, me and my teammates realized that solving the Quixo project while using RL is unfeasible due to the branching factor of the tree
+- Thus after a million iterations and a 5GB file the winnings were a bit above 30%
+- Typically we could say that we are done with the project
+
+**01/27/2024**
+-- 
+- Me and my usual collegues organzied a meeting to meet in person and finalize the remanant of the theory that has left and close the chapter of reviewing the course topics.
+
+**01/28/2024**
+--
+- Me and my teammates (Whom I worked with for almost all labs + quixo project) planned a meeting to wrap up what we want to put for our reports in the sections in which we worked together. 
+- We did the report for Lab 2 and Lab 9
+
+**01/29/2024**
+--
+- Continuing and finalizing the wrap up of the report together with my collegues. 
+- We did the report for Lab 10 and Quixo Project and finished the sections we did together.
+
+**01/31/2024**
+--
+- Continuing the report (The remaining parts were Lab 1 and all of the reviews received/issued)
+- Pushed all the files of Quixo project into my repository
+
+**02/01/2024**
+--
+- Finalizing the report (The remaining parts were Lab 1 and all of the reviews received/issued)
+- Sent an email to the porfessor for the report
+- Finalizing the log
+- Last Commit
